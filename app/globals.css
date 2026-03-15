@@ -41,47 +41,47 @@
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
 
-  /* Niko Labs Brand Tokens */
-  --color-nk-bg: #0A0A0F;
-  --color-nk-surface: #13131A;
-  --color-nk-surface-raised: #1C1C27;
-  --color-nk-border: #2A2A3D;
-  --color-nk-accent: #6C63FF;
-  --color-nk-accent-hover: #8B85FF;
-  --color-nk-accent-soft: rgba(108, 99, 255, 0.1);
-  --color-nk-text-primary: #F0F0FF;
-  --color-nk-text-secondary: #9090AA;
+  /* Niko Labs Brand Tokens — Light Theme */
+  --color-nk-bg: #FAF9F6;
+  --color-nk-surface: #FFFFFF;
+  --color-nk-surface-raised: #F0EFEC;
+  --color-nk-border: #E2E0DA;
+  --color-nk-accent: #4BC4C4;
+  --color-nk-accent-hover: #3AAFAF;
+  --color-nk-accent-soft: rgba(75, 196, 196, 0.1);
+  --color-nk-text-primary: #1A2744;
+  --color-nk-text-secondary: #4A5568;
   --color-nk-success: #22D3A5;
 }
 
 :root {
-  --background: #0A0A0F;
-  --foreground: #F0F0FF;
-  --card: #13131A;
-  --card-foreground: #F0F0FF;
-  --popover: #13131A;
-  --popover-foreground: #F0F0FF;
-  --primary: #6C63FF;
-  --primary-foreground: #F0F0FF;
-  --secondary: #1C1C27;
-  --secondary-foreground: #F0F0FF;
-  --muted: #1C1C27;
-  --muted-foreground: #9090AA;
-  --accent: #6C63FF;
-  --accent-foreground: #F0F0FF;
+  --background: #FAF9F6;
+  --foreground: #1A2744;
+  --card: #FFFFFF;
+  --card-foreground: #1A2744;
+  --popover: #FFFFFF;
+  --popover-foreground: #1A2744;
+  --primary: #4BC4C4;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F0EFEC;
+  --secondary-foreground: #1A2744;
+  --muted: #F0EFEC;
+  --muted-foreground: #4A5568;
+  --accent: #4BC4C4;
+  --accent-foreground: #FFFFFF;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: #2A2A3D;
-  --input: #2A2A3D;
-  --ring: #6C63FF;
+  --border: #E2E0DA;
+  --input: #E2E0DA;
+  --ring: #4BC4C4;
   --radius: 0.625rem;
-  --sidebar: #13131A;
-  --sidebar-foreground: #F0F0FF;
-  --sidebar-primary: #6C63FF;
-  --sidebar-primary-foreground: #F0F0FF;
-  --sidebar-accent: #1C1C27;
-  --sidebar-accent-foreground: #F0F0FF;
-  --sidebar-border: #2A2A3D;
-  --sidebar-ring: #6C63FF;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #1A2744;
+  --sidebar-primary: #4BC4C4;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F0EFEC;
+  --sidebar-accent-foreground: #1A2744;
+  --sidebar-border: #E2E0DA;
+  --sidebar-ring: #4BC4C4;
 }
 
 @layer base {
@@ -102,22 +102,22 @@
     font-family: var(--font-jetbrains-mono), monospace;
   }
   .text-gradient {
-    background: linear-gradient(135deg, #F0F0FF 0%, #9090AA 100%);
+    background: linear-gradient(135deg, #1A2744 0%, #4A5568 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   .text-gradient-accent {
-    background: linear-gradient(135deg, #6C63FF 0%, #8B85FF 100%);
+    background: linear-gradient(135deg, #4BC4C4 0%, #3AAFAF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   .glow-accent {
-    box-shadow: 0 0 40px rgba(108, 99, 255, 0.15);
+    box-shadow: 0 0 40px rgba(75, 196, 196, 0.15);
   }
   .border-accent-glow {
-    border-color: rgba(108, 99, 255, 0.4);
-    box-shadow: 0 0 20px rgba(108, 99, 255, 0.1);
+    border-color: rgba(75, 196, 196, 0.4);
+    box-shadow: 0 0 20px rgba(75, 196, 196, 0.1);
   }
 }

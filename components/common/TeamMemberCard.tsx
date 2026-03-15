@@ -8,9 +8,9 @@ interface TeamMemberCardProps {
 
 export function TeamMemberCard({ member, showBio = false }: TeamMemberCardProps) {
   return (
-    <div className="rounded-2xl bg-[#13131A] border border-[#2A2A3D] p-6 flex flex-col items-center text-center hover:border-[#6C63FF]/30 transition-colors duration-300 group">
+    <div className="rounded-2xl bg-[#FFFFFF] border border-[#E2E0DA] p-6 flex flex-col items-center text-center hover:border-[#4BC4C4]/30 transition-colors duration-300 group">
       {/* Avatar */}
-      <div className="w-16 h-16 rounded-full bg-[#1C1C27] border-2 border-[#2A2A3D] group-hover:border-[#6C63FF]/40 transition-colors overflow-hidden mb-4">
+      <div className="w-16 h-16 rounded-full bg-[#F0EFEC] border-2 border-[#E2E0DA] group-hover:border-[#4BC4C4]/40 transition-colors overflow-hidden mb-4">
         <img
           src={member.avatar}
           alt={member.name}
@@ -20,11 +20,11 @@ export function TeamMemberCard({ member, showBio = false }: TeamMemberCardProps)
       </div>
 
       {/* Info */}
-      <h3 className="font-semibold text-[#F0F0FF] text-sm">{member.name}</h3>
-      <p className="text-xs text-[#6C63FF] font-mono mt-1">{member.role}</p>
+      <h3 className="font-semibold text-[#1A2744] text-sm">{member.name}</h3>
+      <p className="text-xs text-[#4BC4C4] font-mono mt-1">{member.role}</p>
 
       {showBio && (
-        <p className="text-xs text-[#9090AA] leading-relaxed mt-3">{member.bio}</p>
+        <p className="text-xs text-[#4A5568] leading-relaxed mt-3">{member.bio}</p>
       )}
 
       {/* Tags */}
@@ -33,7 +33,7 @@ export function TeamMemberCard({ member, showBio = false }: TeamMemberCardProps)
           <Badge
             key={tag}
             variant="outline"
-            className="border-[#2A2A3D] text-[#9090AA] text-[10px] px-2 py-0"
+            className="border-[#E2E0DA] text-[#4A5568] text-[10px] px-2 py-0"
           >
             {tag}
           </Badge>

@@ -37,9 +37,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body
-        className={`${inter.variable} ${jetbrainsMono.variable} antialiased min-h-screen bg-[#0A0A0F] text-[#F0F0FF]`}
+        className={`${inter.variable} ${jetbrainsMono.variable} antialiased min-h-screen bg-[#FAF9F6] text-[#1A2744]`}
       >
         <Navbar />
         <main>{children}</main>

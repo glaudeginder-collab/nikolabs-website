@@ -47,13 +47,13 @@ export default function AboutPage() {
             transition={{ duration: 0.5 }}
             className="max-w-3xl"
           >
-            <span className="text-xs font-mono uppercase tracking-widest text-[#6C63FF] mb-4 block">
+            <span className="text-xs font-mono uppercase tracking-widest text-[#4BC4C4] mb-4 block">
               About
             </span>
-            <h1 className="text-4xl sm:text-5xl font-bold text-[#F0F0FF] mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl font-bold text-[#1A2744] mb-6 leading-tight">
               We started Niko Labs because the gap was obvious
             </h1>
-            <p className="text-lg text-[#9090AA] leading-relaxed">
+            <p className="text-lg text-[#4A5568] leading-relaxed">
               Enterprises were deploying AI teams of 10, 20, 50 people. SMEs
               were watching from the sidelines — not because they didn&apos;t need it,
               but because there was no accessible entry point. We built one.
@@ -63,7 +63,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#13131A] border-y border-[#2A2A3D]">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#FFFFFF] border-y border-[#E2E0DA]">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -72,10 +72,10 @@ export default function AboutPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <h2 className="text-3xl font-bold text-[#F0F0FF] mb-6">
+              <h2 className="text-3xl font-bold text-[#1A2744] mb-6">
                 The mission
               </h2>
-              <div className="space-y-4 text-[#9090AA] leading-relaxed">
+              <div className="space-y-4 text-[#4A5568] leading-relaxed">
                 <p>
                   Niko Labs exists to give growing businesses access to the kind
                   of AI-powered systems that used to require a dedicated internal
@@ -107,12 +107,12 @@ export default function AboutPage() {
               ].map((stat) => (
                 <div
                   key={stat.label}
-                  className="rounded-xl bg-[#1C1C27] border border-[#2A2A3D] p-6 text-center"
+                  className="rounded-xl bg-[#F0EFEC] border border-[#E2E0DA] p-6 text-center"
                 >
-                  <div className="text-3xl font-bold text-[#F0F0FF] mb-1">
+                  <div className="text-3xl font-bold text-[#1A2744] mb-1">
                     {stat.value}
                   </div>
-                  <div className="text-xs text-[#9090AA]">{stat.desc}</div>
+                  <div className="text-xs text-[#4A5568]">{stat.desc}</div>
                 </div>
               ))}
             </motion.div>
@@ -130,10 +130,10 @@ export default function AboutPage() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <span className="text-xs font-mono uppercase tracking-widest text-[#6C63FF] mb-4 block">
+            <span className="text-xs font-mono uppercase tracking-widest text-[#4BC4C4] mb-4 block">
               How we work
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#F0F0FF]">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#1A2744]">
               Our values
             </h2>
           </motion.div>
@@ -146,13 +146,13 @@ export default function AboutPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
-                className="rounded-2xl bg-[#13131A] border border-[#2A2A3D] p-8 hover:border-[#6C63FF]/30 transition-colors duration-300"
+                className="rounded-2xl bg-[#FFFFFF] border border-[#E2E0DA] p-8 hover:border-[#4BC4C4]/30 transition-colors duration-300"
               >
                 <div className="text-3xl mb-4">{value.icon}</div>
-                <h3 className="text-lg font-semibold text-[#F0F0FF] mb-3">
+                <h3 className="text-lg font-semibold text-[#1A2744] mb-3">
                   {value.title}
                 </h3>
-                <p className="text-[#9090AA] leading-relaxed text-sm">
+                <p className="text-[#4A5568] leading-relaxed text-sm">
                   {value.description}
                 </p>
               </motion.div>
@@ -162,7 +162,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#13131A] border-y border-[#2A2A3D]">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#FFFFFF] border-y border-[#E2E0DA]">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -171,13 +171,13 @@ export default function AboutPage() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <span className="text-xs font-mono uppercase tracking-widest text-[#6C63FF] mb-4 block">
+            <span className="text-xs font-mono uppercase tracking-widest text-[#4BC4C4] mb-4 block">
               The team
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#F0F0FF] mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#1A2744] mb-4">
               Who you&apos;re working with
             </h2>
-            <p className="text-[#9090AA] max-w-xl mx-auto">
+            <p className="text-[#4A5568] max-w-xl mx-auto">
               Experienced practitioners, not graduates. Every person on your project has shipped real systems in production.
             </p>
           </motion.div>
@@ -207,7 +207,7 @@ export default function AboutPage() {
               href="/contact"
               className={cn(
                 buttonVariants({ variant: "default" }),
-                "bg-[#6C63FF] hover:bg-[#8B85FF] text-white border-0"
+                "bg-[#4BC4C4] hover:bg-[#3AAFAF] text-white border-0"
               )}
             >
               Work with us

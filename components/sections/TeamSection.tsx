@@ -15,13 +15,13 @@ export function TeamSection() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <span className="text-xs font-mono uppercase tracking-widest text-[#6C63FF] mb-4 block">
+          <span className="text-xs font-mono uppercase tracking-widest text-[#4BC4C4] mb-4 block">
             The team
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#F0F0FF] mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#1A2744] mb-4">
             Senior people. No juniors billing your time.
           </h2>
-          <p className="text-[#9090AA] max-w-xl mx-auto">
+          <p className="text-[#4A5568] max-w-xl mx-auto">
             Every engagement is led by experienced practitioners. You work
             directly with the people building your system.
           </p>

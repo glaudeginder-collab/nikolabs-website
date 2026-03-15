@@ -17,13 +17,13 @@ export default function ServicesPage() {
             transition={{ duration: 0.5 }}
             className="max-w-3xl"
           >
-            <span className="text-xs font-mono uppercase tracking-widest text-[#6C63FF] mb-4 block">
+            <span className="text-xs font-mono uppercase tracking-widest text-[#4BC4C4] mb-4 block">
               Services
             </span>
-            <h1 className="text-4xl sm:text-5xl font-bold text-[#F0F0FF] mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl font-bold text-[#1A2744] mb-6 leading-tight">
               Built for businesses that move fast
             </h1>
-            <p className="text-lg text-[#9090AA] leading-relaxed max-w-2xl">
+            <p className="text-lg text-[#4A5568] leading-relaxed max-w-2xl">
               Every service is designed for SMEs who want enterprise-grade AI
               without the enterprise overhead. Pick the model that fits your
               timeline and budget.
@@ -33,7 +33,7 @@ export default function ServicesPage() {
       </section>
 
       {/* How it works */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-[#13131A] border-y border-[#2A2A3D]">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-[#FFFFFF] border-y border-[#E2E0DA]">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
             {[
@@ -60,11 +60,11 @@ export default function ServicesPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
               >
-                <div className="font-mono text-3xl text-[#6C63FF]/30 font-bold mb-3">
+                <div className="font-mono text-3xl text-[#4BC4C4]/30 font-bold mb-3">
                   {item.step}
                 </div>
-                <h3 className="font-semibold text-[#F0F0FF] mb-2">{item.title}</h3>
-                <p className="text-sm text-[#9090AA]">{item.desc}</p>
+                <h3 className="font-semibold text-[#1A2744] mb-2">{item.title}</h3>
+                <p className="text-sm text-[#4A5568]">{item.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -94,13 +94,13 @@ export default function ServicesPage() {
       {/* Pricing note */}
       <section className="py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-xl bg-[#13131A] border border-[#2A2A3D] p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="rounded-xl bg-[#FFFFFF] border border-[#E2E0DA] p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
             <span className="text-2xl">💡</span>
             <div>
-              <p className="text-sm text-[#F0F0FF] font-medium">
+              <p className="text-sm text-[#1A2744] font-medium">
                 Not sure which service fits?
               </p>
-              <p className="text-sm text-[#9090AA] mt-1">
+              <p className="text-sm text-[#4A5568] mt-1">
                 Start with AgentReady. It&apos;s our lightest engagement — an audit +
                 roadmap + 3 implemented items. Many clients expand from there.
               </p>

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { buttonVariants } from "@/components/ui/button";
@@ -32,7 +33,7 @@ export function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#0A0A0F]/95 backdrop-blur-md border-b border-[#2A2A3D]"
+          ? "bg-[#FAF9F6]/95 backdrop-blur-md border-b border-[#E2E0DA]"
           : "bg-transparent"
       }`}
     >
@@ -40,12 +41,14 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-[#6C63FF] flex items-center justify-center text-white font-bold text-sm">
-              N
-            </div>
-            <span className="font-semibold text-[#F0F0FF] group-hover:text-white transition-colors">
-              Niko Labs
-            </span>
+            <Image
+              src="/images/nikolabs-logo.jpg"
+              alt="Niko Labs Ltd"
+              width={120}
+              height={40}
+              className="h-10 w-auto object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}
@@ -56,8 +59,8 @@ export function Navbar() {
                 href={link.href}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                   pathname === link.href
-                    ? "text-[#F0F0FF] bg-[#1C1C27]"
-                    : "text-[#9090AA] hover:text-[#F0F0FF] hover:bg-[#13131A]"
+                    ? "text-[#1A2744] bg-[#F0EFEC]"
+                    : "text-[#4A5568] hover:text-[#1A2744] hover:bg-[#F0EFEC]"
                 }`}
               >
                 {link.label}
@@ -71,7 +74,7 @@ export function Navbar() {
               href="/contact"
               className={cn(
                 buttonVariants({ variant: "default", size: "sm" }),
-                "bg-[#6C63FF] hover:bg-[#8B85FF] text-white border-0 text-sm"
+                "bg-[#4BC4C4] hover:bg-[#3AAFAF] text-white border-0 text-sm"
               )}
             >
               Get started
@@ -80,7 +83,7 @@ export function Navbar() {
 
           {/* Mobile hamburger */}
           <button
-            className="md:hidden p-2 rounded-lg text-[#9090AA] hover:text-[#F0F0FF] hover:bg-[#13131A] transition-colors"
+            className="md:hidden p-2 rounded-lg text-[#4A5568] hover:text-[#1A2744] hover:bg-[#F0EFEC] transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
@@ -107,7 +110,7 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-[#13131A] border-t border-[#2A2A3D]">
+        <div className="md:hidden bg-[#FFFFFF] border-t border-[#E2E0DA]">
           <div className="px-4 py-4 space-y-1">
             {navLinks.map((link) => (
               <Link
@@ -115,8 +118,8 @@ export function Navbar() {
                 href={link.href}
                 className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
                   pathname === link.href
-                    ? "text-[#F0F0FF] bg-[#1C1C27]"
-                    : "text-[#9090AA] hover:text-[#F0F0FF] hover:bg-[#1C1C27]"
+                    ? "text-[#1A2744] bg-[#F0EFEC]"
+                    : "text-[#4A5568] hover:text-[#1A2744] hover:bg-[#F0EFEC]"
                 }`}
               >
                 {link.label}
@@ -127,7 +130,7 @@ export function Navbar() {
                 href="/contact"
                 className={cn(
                   buttonVariants({ variant: "default" }),
-                  "w-full bg-[#6C63FF] hover:bg-[#8B85FF] text-white border-0 justify-center"
+                  "w-full bg-[#4BC4C4] hover:bg-[#3AAFAF] text-white border-0 justify-center"
                 )}
               >
                 Get started
