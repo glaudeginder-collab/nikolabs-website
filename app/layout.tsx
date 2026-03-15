@@ -18,12 +18,12 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Niko Labs — AI Agent-Driven Consultancy for SMEs",
+  title: "Niko Labs Ltd — AI Agent-Driven Consultancy for SMEs",
   description:
-    "Niko Labs builds AI automations, tools, and data systems for growing businesses. Delivered in weeks, not quarters.",
+    "Niko Labs Ltd builds AI automations, tools, and data systems for growing businesses. Delivered in weeks, not quarters.",
   keywords: "AI consultancy, AI agents, automation, SME, data pipelines",
   openGraph: {
-    title: "Niko Labs — AI Agent-Driven Consultancy for SMEs",
+    title: "Niko Labs Ltd — AI Agent-Driven Consultancy for SMEs",
     description:
       "We build the automations, tools, and data systems that used to require a 10-person tech team — delivered in weeks, not quarters.",
     type: "website",

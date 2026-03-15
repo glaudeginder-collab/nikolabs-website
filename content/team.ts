@@ -12,7 +12,7 @@ export const team: TeamMember[] = [
     id: "nico",
     name: "Nico",
     role: "Scrum Master & Founder",
-    bio: "Nico founded Niko Labs to give SMEs access to the kind of AI-powered tech teams that used to be reserved for enterprises. He keeps the team moving, the clients happy, and the sprints on time.",
+    bio: "Nico founded Niko Labs Ltd to give SMEs access to the kind of AI-powered tech teams that used to be reserved for enterprises. He keeps the team moving, the clients happy, and the sprints on time.",
     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Nico&backgroundColor=1C1C27",
     tags: ["Leadership", "Agile", "Product Strategy"],
   },

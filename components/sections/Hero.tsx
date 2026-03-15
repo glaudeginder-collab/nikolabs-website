@@ -67,7 +67,7 @@ export function Hero() {
             variants={fadeUp}
             className="text-lg sm:text-xl text-[#4A5568] leading-relaxed max-w-2xl mb-10"
           >
-            Niko Labs is an AI agent-driven consultancy for growing businesses.
+            Niko Labs Ltd is an AI agent-driven consultancy for growing businesses.
             We build the automations, tools, and data systems that used to
             require a 10-person tech team —{" "}
             <span className="text-[#1A2744] font-medium">delivered in weeks, not quarters.</span>

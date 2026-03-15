@@ -51,7 +51,7 @@ export default function AboutPage() {
               About
             </span>
             <h1 className="text-4xl sm:text-5xl font-bold text-[#1A2744] mb-6 leading-tight">
-              We started Niko Labs because the gap was obvious
+              We started Niko Labs Ltd because the gap was obvious
             </h1>
             <p className="text-lg text-[#4A5568] leading-relaxed">
               Enterprises were deploying AI teams of 10, 20, 50 people. SMEs
@@ -77,7 +77,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-[#4A5568] leading-relaxed">
                 <p>
-                  Niko Labs exists to give growing businesses access to the kind
+                  Niko Labs Ltd exists to give growing businesses access to the kind
                   of AI-powered systems that used to require a dedicated internal
                   tech team.
                 </p>
