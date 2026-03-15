@@ -33,17 +33,30 @@ export function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
         <div className="max-w-4xl">
-          {/* Label */}
+          {/* Availability pill */}
           <motion.div
             initial="hidden"
             animate="visible"
             custom={0}
             variants={fadeUp}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#4BC4C4]/10 border border-[#4BC4C4]/20 mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#4BC4C4]/10 border border-[#4BC4C4]/20 mb-6"
           >
             <span className="w-2 h-2 rounded-full bg-[#22D3A5] animate-pulse" />
             <span className="text-sm font-mono text-[#4A5568]">
               Available for new projects
+            </span>
+          </motion.div>
+
+          {/* Category badge */}
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            custom={0.05}
+            variants={fadeUp}
+            className="block mb-6"
+          >
+            <span className="inline-block px-4 py-1.5 rounded-full bg-[#4BC4C4] text-white text-sm font-semibold tracking-wide">
+              AI Consultancy for Growing Businesses
             </span>
           </motion.div>
 
@@ -67,7 +80,6 @@ export function Hero() {
             variants={fadeUp}
             className="text-lg sm:text-xl text-[#4A5568] leading-relaxed max-w-2xl mb-10"
           >
-            Niko Labs Ltd is an AI agent-driven consultancy for growing businesses.
             We build the automations, tools, and data systems that used to
             require a 10-person tech team —{" "}
             <span className="text-[#1A2744] font-medium">delivered in weeks, not quarters.</span>

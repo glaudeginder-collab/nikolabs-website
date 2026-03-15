@@ -84,7 +84,7 @@ export default function ServicesPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
               >
-                <ServiceCard service={service} />
+                <ServiceCard service={service} showPricing={true} />
               </motion.div>
             ))}
           </div>

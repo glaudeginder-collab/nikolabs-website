@@ -7,9 +7,10 @@ import { cn } from "@/lib/utils";
 interface ServiceCardProps {
   service: Service;
   showFeatures?: boolean;
+  showPricing?: boolean;
 }
 
-export function ServiceCard({ service, showFeatures = true }: ServiceCardProps) {
+export function ServiceCard({ service, showFeatures = true, showPricing = false }: ServiceCardProps) {
   return (
     <div
       className={`relative h-full rounded-2xl border p-8 flex flex-col transition-all duration-300 group hover:border-[#4BC4C4]/40 hover:shadow-[0_0_30px_rgba(75,196,196,0.08)] ${
@@ -33,10 +34,12 @@ export function ServiceCard({ service, showFeatures = true }: ServiceCardProps) 
           <h3 className="text-xl font-bold text-[#1A2744]">{service.name}</h3>
           <p className="text-sm text-[#4BC4C4] font-mono mt-1">{service.tagline}</p>
         </div>
-        <div className="text-right">
-          <div className="text-lg font-bold text-[#1A2744]">{service.price}</div>
-          <div className="text-xs text-[#4A5568]">{service.priceNote}</div>
-        </div>
+        {showPricing && (
+          <div className="text-right">
+            <div className="text-lg font-bold text-[#1A2744]">{service.price}</div>
+            <div className="text-xs text-[#4A5568]">{service.priceNote}</div>
+          </div>
+        )}
       </div>
 
       {/* Description */}

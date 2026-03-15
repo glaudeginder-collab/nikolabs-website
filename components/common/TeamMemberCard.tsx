@@ -9,14 +9,11 @@ interface TeamMemberCardProps {
 export function TeamMemberCard({ member, showBio = false }: TeamMemberCardProps) {
   return (
     <div className="rounded-2xl bg-[#FFFFFF] border border-[#E2E0DA] p-6 flex flex-col items-center text-center hover:border-[#4BC4C4]/30 transition-colors duration-300 group">
-      {/* Avatar */}
-      <div className="w-16 h-16 rounded-full bg-[#F0EFEC] border-2 border-[#E2E0DA] group-hover:border-[#4BC4C4]/40 transition-colors overflow-hidden mb-4">
-        <img
-          src={member.avatar}
-          alt={member.name}
-          className="w-full h-full object-cover"
-          loading="lazy"
-        />
+      {/* Initials avatar */}
+      <div className="w-16 h-16 rounded-full bg-[#1A2744] group-hover:ring-2 group-hover:ring-[#4BC4C4]/40 transition-all flex items-center justify-center mb-4 shrink-0">
+        <span className="text-xl font-bold text-[#4BC4C4] select-none leading-none">
+          {member.name.split(" ").map((n) => n[0]).join("").toUpperCase()}
+        </span>
       </div>
 
       {/* Info */}
