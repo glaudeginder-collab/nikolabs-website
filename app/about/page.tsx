@@ -10,28 +10,28 @@ import { CTABanner } from "@/components/sections/CTABanner";
 
 const values = [
   {
-    icon: "⚡",
-    title: "Speed without compromise",
+    icon: "🧠",
+    title: "The person behind it",
     description:
-      "We move fast because we've done this before. Quick doesn't mean cutting corners — it means experience.",
+      "Nico has spent years working inside real businesses — not just advising from the outside. He's run delivery teams, led digital transformations, and sat in enough painful project retrospectives to know exactly what goes wrong and why.",
   },
   {
-    icon: "🔬",
-    title: "Working output, always",
+    icon: "⚙️",
+    title: "How it works",
     description:
-      "We don't deliver slide decks. Every engagement ends with something real, tested, and handed over with documentation.",
-  },
-  {
-    icon: "🤝",
-    title: "Direct access",
-    description:
-      "No account managers, no layers. You work directly with the people building your system.",
+      "Every engagement is led by Nico directly — scoping, client comms, priorities, QC. Behind that, an AI agent team does the heavy lifting: architecture, development, product thinking, data.",
   },
   {
     icon: "🎯",
-    title: "SME-first thinking",
+    title: "Why SMEs",
     description:
-      "Enterprise tools, SME context. We know how smaller businesses actually operate, and we build accordingly.",
+      "SMEs have real problems, real budgets, and no in-house tech team. What they need is experienced guidance — someone who's been in the room, made the calls, and knows when to build and when not to.",
+  },
+  {
+    icon: "✅",
+    title: "The honest bit",
+    description:
+      "We use AI. A lot of it. We're not hiding that. What we're not doing is using AI as a shortcut to bypass the thinking. Nico reviews everything. Judgment, context, client relationships — that's still human.",
   },
 ];
 
@@ -51,12 +51,13 @@ export default function AboutPage() {
               About
             </span>
             <h1 className="text-4xl sm:text-5xl font-bold text-[#1A2744] mb-6 leading-tight">
-              We started Niko Labs Ltd because the gap was obvious
+              Who We Are
             </h1>
             <p className="text-lg text-[#4A5568] leading-relaxed">
-              Enterprises were deploying AI teams of 10, 20, 50 people. SMEs
-              were watching from the sidelines — not because they didn&apos;t need it,
-              but because there was no accessible entry point. We built one.
+              Niko Labs is not a traditional agency. It&apos;s not a faceless AI tool either.
+              It&apos;s Nico — an experienced consultant and scrum master — working with a team
+              of AI agents to deliver what most businesses can&apos;t afford: senior-level
+              technology consultancy, moving fast, at a price that makes sense.
             </p>
           </motion.div>
         </div>
@@ -73,21 +74,19 @@ export default function AboutPage() {
               transition={{ duration: 0.5 }}
             >
               <h2 className="text-3xl font-bold text-[#1A2744] mb-6">
-                The mission
+                He understands what SMEs actually need
               </h2>
               <div className="space-y-4 text-[#4A5568] leading-relaxed">
                 <p>
-                  Niko Labs Ltd exists to give growing businesses access to the kind
-                  of AI-powered systems that used to require a dedicated internal
-                  tech team.
+                  Not a ten-week discovery phase or a 200-page requirements doc —
+                  but clear thinking, fast decisions, and software that solves the actual problem.
                 </p>
                 <p>
-                  We&apos;re not consultants who hand you a strategy document and
-                  disappear. We build the thing. We hand it over. You own it.
+                  The result is a delivery pace and cost structure that a traditional
+                  consultancy can&apos;t touch.
                 </p>
-                <p>
-                  Our engagements are designed to be fast, focused, and finite.
-                  No retainers, no lock-in. Just working output.
+                <p className="italic text-[#1A2744] font-medium border-l-2 border-[#4BC4C4] pl-4">
+                  The AI cuts the time and cost. Nico&apos;s consultancy track record cuts the risk.
                 </p>
               </div>
             </motion.div>
@@ -134,7 +133,7 @@ export default function AboutPage() {
               How we work
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#1A2744]">
-              Our values
+              The model
             </h2>
           </motion.div>
 

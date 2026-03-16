@@ -68,8 +68,8 @@ export function Hero() {
             variants={fadeUp}
             className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.08] mb-6 text-[#1A2744]"
           >
-            Your competitors are hiring AI teams.{" "}
-            <span className="text-gradient-accent">You just found yours.</span>
+            The experience you can&apos;t automate.{" "}
+            <span className="text-gradient-accent">The speed only AI delivers.</span>
           </motion.h1>
 
           {/* Subheading */}
@@ -80,9 +80,8 @@ export function Hero() {
             variants={fadeUp}
             className="text-lg sm:text-xl text-[#4A5568] leading-relaxed max-w-2xl mb-10"
           >
-            We build the automations, tools, and data systems that used to
-            require a 10-person tech team —{" "}
-            <span className="text-[#1A2744] font-medium">delivered in weeks, not quarters.</span>
+            Niko Labs is built on years of real-world consultancy and scrum leadership — the kind of hard-won judgment no AI can replace. We pair that experience with an AI-powered delivery team to move at a pace and price that{" "}
+            <span className="text-[#1A2744] font-medium">traditional agencies simply can&apos;t match.</span>
           </motion.p>
 
           {/* CTAs */}
