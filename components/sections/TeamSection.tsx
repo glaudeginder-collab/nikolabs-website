@@ -16,14 +16,14 @@ export function TeamSection() {
           className="text-center mb-16"
         >
           <span className="text-xs font-mono uppercase tracking-widest text-[#4BC4C4] mb-4 block">
-            The team
+            THE TEAM
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-[#1A2744] mb-4">
-            Senior people. No juniors billing your time.
+            Human-led. AI-powered.
           </h2>
           <p className="text-[#4A5568] max-w-xl mx-auto">
-            Every engagement is led by experienced practitioners. You work
-            directly with the people building your system.
+            Nico leads every engagement. Our AI agents do the heavy lifting —
+            architecture, code, product, data. All working together, all the time.
           </p>
         </motion.div>
 
