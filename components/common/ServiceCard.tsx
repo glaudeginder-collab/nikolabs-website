@@ -36,8 +36,18 @@ export function ServiceCard({ service, showFeatures = true, showPricing = false 
         </div>
         {showPricing && (
           <div className="text-right">
-            <div className="text-lg font-bold text-[#1A2744]">{service.price}</div>
-            <div className="text-xs text-[#4A5568]">{service.priceNote}</div>
+            {service.price === "Custom pricing" ? (
+              <>
+                <div className="text-base font-semibold text-[#4A5568]">{service.price}</div>
+                <div className="text-xs text-[#4A5568]">{service.priceNote}</div>
+              </>
+            ) : (
+              <>
+                <div className="text-lg font-bold text-[#1A2744]">{service.price}</div>
+                <div className="text-xs text-[#4A5568]">{service.priceNote}</div>
+                <div className="text-xs text-[#4BC4C4] mt-0.5">💱 We invoice in your currency</div>
+              </>
+            )}
           </div>
         )}
       </div>
